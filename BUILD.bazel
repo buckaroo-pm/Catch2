@@ -1,0 +1,14 @@
+load("//buckaroo:defs.bzl", "buckaroo_deps")
+
+cc_library(
+  name = "catch2",
+  includes = [
+    "single_include",
+  ],
+  hdrs = glob([
+    "single_include/**/*.hpp",
+  ]),
+  visibility = [
+    '//visibility:public',
+  ],
+)
